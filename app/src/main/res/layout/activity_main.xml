@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/general_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/general_label"
+        android:textColor="#009688"
+        android:textSize="@dimen/my_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/can_you_guess_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/can_you_guess_text_view"
+        android:textColor="#000000"
+        android:textSize="@dimen/my_value"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/general_label"
+        app:layout_constraintStart_toStartOf="@+id/general_label"
+        app:layout_constraintTop_toBottomOf="@+id/general_label" />
+
+    <EditText
+        android:id="@+id/value_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/place_holder_hint"
+        android:ems="10"
+        android:hint="@string/place_holder_hint"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/my_value"
+        app:layout_constraintEnd_toEndOf="@+id/general_label"
+        app:layout_constraintStart_toStartOf="@+id/general_label"
+        app:layout_constraintTop_toBottomOf="@+id/can_you_guess_text_view" />
+
+    <Button
+        android:id="@+id/guess_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/guess_button"
+        app:layout_constraintEnd_toEndOf="@+id/general_label"
+        app:layout_constraintStart_toStartOf="@+id/general_label"
+        app:layout_constraintTop_toBottomOf="@+id/value_edit_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

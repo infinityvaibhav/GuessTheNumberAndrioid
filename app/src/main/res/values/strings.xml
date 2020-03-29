@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Guess the Number</string>
+    <string name="can_you_guess_text_view">Can you guess it?</string>
+    <string name="guess_button">GUESS</string>
+    <string name="place_holder_hint">1</string>
+    <string name="general_label">I m thinking of number between 1 and 20</string>
+    <string name="text_higher">Higher!</string>
+    <string name="text_lower">Lower!</string>
+    <string name="text_passed">You Got It! \nTry again new</string>
+    <string name="empty_error_message_edit_text">please enter value</string>
+</resources>
